@@ -1,3 +1,5 @@
 /.env
 /content/
 /app/infra/log/
+/app/infra/log/logs.log
+/profiles.json
