@@ -430,3 +430,199 @@
 2023-02-17 12:27:21,803 - app.infra.logger - DEBUG - file_system.py:write_file - content/arsenshamkhalov/week1/Grilled turkey breast_recipe.json written successfully
 2023-02-17 12:27:21,804 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/arsenshamkhalov/week1/Grilled turkey breast_recipe.json is written
 2023-02-17 12:27:21,807 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - Grilled turkey breast added to content/arsenshamkhalov/week1//progress.json
+2023-02-17 15:11:42,088 - app.infra.logger - DEBUG - plan.py:add_new_person_route - add new person route summoned
+2023-02-17 15:11:42,089 - app.infra.logger - DEBUG - person.py:__init__ - person initialization complete
+2023-02-17 15:11:42,089 - app.infra.logger - DEBUG - plan.py:add_person_object - Greg Person object created
+2023-02-17 15:11:42,090 - app.infra.logger - DEBUG - person.py:create - person adding to json complete
+2023-02-17 15:11:42,090 - app.infra.logger - DEBUG - plan.py:add_person_object - Greg Person object added to json
+2023-02-17 15:12:19,007 - app.infra.logger - DEBUG - plan.py:make_meal_plan_route - make meal plan route summoned
+2023-02-17 15:12:19,083 - app.infra.logger - DEBUG - app_celery.py:make_meal_plan_task - celery sending meal plan request
+2023-02-17 15:12:19,084 - app.infra.logger - DEBUG - person.py:read - person reading complete
+2023-02-17 15:12:19,088 - app.infra.logger - DEBUG - person.py:__init__ - person initialization complete
+2023-02-17 15:12:19,089 - app.infra.logger - DEBUG - person.py:calculate_calories - TDEE calculated to 3650.57
+2023-02-17 15:12:19,090 - app.infra.logger - DEBUG - meal_plan_message.py:get_conversation - 3 meal plan found
+2023-02-17 15:12:19,090 - app.infra.logger - DEBUG - meal_plan_message.py:get_conversation - Conversation generated
+2023-02-17 15:12:19,091 - app.infra.logger - DEBUG - meal_plan.py:create_meal_plan - request sent to OpenAI
+2023-02-17 15:12:19,092 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv
+2023-02-17 15:13:55,794 - app.infra.logger - DEBUG - plan.py:generate_recipes_route - generate recipes route summoned
+2023-02-17 15:13:55,815 - app.infra.logger - DEBUG - plan.py:generate_recipes - meal plan not completed yet, task id: 7c398671-eb9c-4b71-b79d-61ef7381c9e5
+2023-02-17 15:14:09,613 - app.infra.logger - DEBUG - gpt.py:ask_gpt - response received from openai
+2023-02-17 15:14:09,614 - app.infra.logger - DEBUG - meal_plan.py:create_meal_plan - response received from OpenAI
+2023-02-17 15:14:09,614 - app.infra.logger - DEBUG - file_system.py:write_file - content/greg/weekly_plan.json written successfully
+2023-02-17 15:14:09,615 - app.infra.logger - DEBUG - meal_plan.py:create_meal_plan - content/greg/weekly_plan.json written
+2023-02-17 15:19:04,406 - app.infra.logger - DEBUG - plan.py:generate_recipes_route - generate recipes route summoned
+2023-02-17 15:19:04,425 - app.infra.logger - DEBUG - plan.py:generate_recipes - meal recipes task added to queue, task id: 235775a8-8622-4f89-a7ad-4c7d6ac3a62f
+2023-02-17 15:19:04,428 - app.infra.logger - DEBUG - app_celery.py:generate_recipes_task - celery sending recipe request
+2023-02-17 15:19:04,429 - app.infra.logger - DEBUG - person.py:read - person reading complete
+2023-02-17 15:19:04,429 - app.infra.logger - DEBUG - person.py:__init__ - person initialization complete
+2023-02-17 15:19:04,430 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - person read successfully from JSON
+2023-02-17 15:19:04,430 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/greg/week1/ not found and created successfully 
+2023-02-17 15:19:04,431 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - meal plan content/greg/weekly_plan.json loaded
+2023-02-17 15:19:04,431 - app.infra.logger - DEBUG - meal_recipe_message.py:get_conversation - conversation generated
+2023-02-17 15:19:04,432 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - meal recipe requested from chat OpenAI
+2023-02-17 15:19:04,432 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv
+2023-02-17 15:19:30,659 - app.infra.logger - DEBUG - gpt.py:ask_gpt - response received from openai
+2023-02-17 15:19:30,659 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - response received from OpenAI
+2023-02-17 15:19:30,660 - app.infra.logger - DEBUG - file_system.py:write_file - content/greg/week1/Banana Oat Pancakes_recipe.json written successfully
+2023-02-17 15:19:30,660 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/greg/week1/Banana Oat Pancakes_recipe.json is written
+2023-02-17 15:19:30,661 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - Banana Oat Pancakes added to content/greg/week1//progress.json
+2023-02-17 15:19:30,661 - app.infra.logger - DEBUG - meal_recipe_message.py:get_conversation - conversation generated
+2023-02-17 15:19:30,661 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - meal recipe requested from chat OpenAI
+2023-02-17 15:19:30,662 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv
+2023-02-17 15:19:58,909 - app.infra.logger - DEBUG - gpt.py:ask_gpt - response received from openai
+2023-02-17 15:19:58,912 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - response received from OpenAI
+2023-02-17 15:19:58,914 - app.infra.logger - DEBUG - file_system.py:write_file - content/greg/week1/Quinoa Salad_recipe.json written successfully
+2023-02-17 15:19:58,915 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/greg/week1/Quinoa Salad_recipe.json is written
+2023-02-17 15:19:58,917 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - Quinoa Salad added to content/greg/week1//progress.json
+2023-02-17 15:19:58,918 - app.infra.logger - DEBUG - meal_recipe_message.py:get_conversation - conversation generated
+2023-02-17 15:19:58,920 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - meal recipe requested from chat OpenAI
+2023-02-17 15:19:58,921 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv
+2023-02-17 15:20:26,264 - app.infra.logger - DEBUG - gpt.py:ask_gpt - response received from openai
+2023-02-17 15:20:26,266 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - response received from OpenAI
+2023-02-17 15:20:26,268 - app.infra.logger - DEBUG - file_system.py:write_file - content/greg/week1/Veggie Stir-Fry_recipe.json written successfully
+2023-02-17 15:20:26,269 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/greg/week1/Veggie Stir-Fry_recipe.json is written
+2023-02-17 15:20:26,271 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - Veggie Stir-Fry added to content/greg/week1//progress.json
+2023-02-17 15:20:26,272 - app.infra.logger - DEBUG - meal_recipe_message.py:get_conversation - conversation generated
+2023-02-17 15:20:26,273 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - meal recipe requested from chat OpenAI
+2023-02-17 15:20:26,275 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv
+2023-02-17 15:20:53,062 - app.infra.logger - DEBUG - gpt.py:ask_gpt - response received from openai
+2023-02-17 15:20:53,064 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - response received from OpenAI
+2023-02-17 15:20:53,066 - app.infra.logger - DEBUG - file_system.py:write_file - content/greg/week1/Veggie Omelet_recipe.json written successfully
+2023-02-17 15:20:53,067 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/greg/week1/Veggie Omelet_recipe.json is written
+2023-02-17 15:20:53,068 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - Veggie Omelet added to content/greg/week1//progress.json
+2023-02-17 15:20:53,070 - app.infra.logger - DEBUG - meal_recipe_message.py:get_conversation - conversation generated
+2023-02-17 15:20:53,071 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - meal recipe requested from chat OpenAI
+2023-02-17 15:20:53,072 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv
+2023-02-17 15:21:27,232 - app.infra.logger - DEBUG - gpt.py:ask_gpt - response received from openai
+2023-02-17 15:21:27,234 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - response received from OpenAI
+2023-02-17 15:21:27,236 - app.infra.logger - DEBUG - file_system.py:write_file - content/greg/week1/Vegetable Soup_recipe.json written successfully
+2023-02-17 15:21:27,238 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/greg/week1/Vegetable Soup_recipe.json is written
+2023-02-17 15:21:27,240 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - Vegetable Soup added to content/greg/week1//progress.json
+2023-02-17 15:21:27,241 - app.infra.logger - DEBUG - meal_recipe_message.py:get_conversation - conversation generated
+2023-02-17 15:21:27,241 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - meal recipe requested from chat OpenAI
+2023-02-17 15:21:27,243 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv
+2023-02-17 15:22:04,785 - app.infra.logger - DEBUG - gpt.py:ask_gpt - response received from openai
+2023-02-17 15:22:04,786 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - response received from OpenAI
+2023-02-17 15:22:04,787 - app.infra.logger - DEBUG - file_system.py:write_file - content/greg/week1/Spicy Tofu Bowl_recipe.json written successfully
+2023-02-17 15:22:04,788 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/greg/week1/Spicy Tofu Bowl_recipe.json is written
+2023-02-17 15:22:04,789 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - Spicy Tofu Bowl added to content/greg/week1//progress.json
+2023-02-17 15:22:04,789 - app.infra.logger - DEBUG - meal_recipe_message.py:get_conversation - conversation generated
+2023-02-17 15:22:04,790 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - meal recipe requested from chat OpenAI
+2023-02-17 15:22:04,791 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv
+2023-02-17 15:22:21,799 - app.infra.logger - DEBUG - gpt.py:ask_gpt - response received from openai
+2023-02-17 15:22:21,800 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - response received from OpenAI
+2023-02-17 15:22:21,804 - app.infra.logger - DEBUG - file_system.py:write_file - content/greg/week1/Egg Scramble_recipe.json written successfully
+2023-02-17 15:22:21,805 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/greg/week1/Egg Scramble_recipe.json is written
+2023-02-17 15:22:21,806 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - Egg Scramble added to content/greg/week1//progress.json
+2023-02-17 15:22:21,807 - app.infra.logger - DEBUG - meal_recipe_message.py:get_conversation - conversation generated
+2023-02-17 15:22:21,808 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - meal recipe requested from chat OpenAI
+2023-02-17 15:22:21,809 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv
+2023-02-17 15:22:37,058 - app.infra.logger - DEBUG - gpt.py:ask_gpt - response received from openai
+2023-02-17 15:22:37,062 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - response received from OpenAI
+2023-02-17 15:22:37,065 - app.infra.logger - DEBUG - file_system.py:write_file - content/greg/week1/Avocado Toast_recipe.json written successfully
+2023-02-17 15:22:37,067 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/greg/week1/Avocado Toast_recipe.json is written
+2023-02-17 15:22:37,070 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - Avocado Toast added to content/greg/week1//progress.json
+2023-02-17 15:22:37,071 - app.infra.logger - DEBUG - meal_recipe_message.py:get_conversation - conversation generated
+2023-02-17 15:22:37,072 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - meal recipe requested from chat OpenAI
+2023-02-17 15:22:37,073 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv
+2023-02-17 15:23:03,518 - app.infra.logger - DEBUG - gpt.py:ask_gpt - response received from openai
+2023-02-17 15:23:03,520 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - response received from OpenAI
+2023-02-17 15:23:03,520 - app.infra.logger - DEBUG - file_system.py:write_file - content/greg/week1/Veggie Burrito_recipe.json written successfully
+2023-02-17 15:23:03,521 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/greg/week1/Veggie Burrito_recipe.json is written
+2023-02-17 15:23:03,521 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - Veggie Burrito added to content/greg/week1//progress.json
+2023-02-17 15:23:03,522 - app.infra.logger - DEBUG - meal_recipe_message.py:get_conversation - conversation generated
+2023-02-17 15:23:03,523 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - meal recipe requested from chat OpenAI
+2023-02-17 15:23:03,524 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv
+2023-02-17 15:23:15,604 - app.infra.logger - DEBUG - gpt.py:ask_gpt - response received from openai
+2023-02-17 15:23:15,604 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - response received from OpenAI
+2023-02-17 15:23:15,605 - app.infra.logger - DEBUG - file_system.py:write_file - content/greg/week1/Blueberry Smoothie_recipe.json written successfully
+2023-02-17 15:23:15,605 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/greg/week1/Blueberry Smoothie_recipe.json is written
+2023-02-17 15:23:15,606 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - Blueberry Smoothie added to content/greg/week1//progress.json
+2023-02-17 15:23:15,606 - app.infra.logger - DEBUG - meal_recipe_message.py:get_conversation - conversation generated
+2023-02-17 15:23:15,607 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - meal recipe requested from chat OpenAI
+2023-02-17 15:23:15,607 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv
+2023-02-17 15:23:32,724 - app.infra.logger - DEBUG - gpt.py:ask_gpt - response received from openai
+2023-02-17 15:23:32,726 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - response received from OpenAI
+2023-02-17 15:23:32,726 - app.infra.logger - DEBUG - file_system.py:write_file - content/greg/week1/Hummus Wrap_recipe.json written successfully
+2023-02-17 15:23:32,727 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/greg/week1/Hummus Wrap_recipe.json is written
+2023-02-17 15:23:32,727 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - Hummus Wrap added to content/greg/week1//progress.json
+2023-02-17 15:23:32,728 - app.infra.logger - DEBUG - meal_recipe_message.py:get_conversation - conversation generated
+2023-02-17 15:23:32,729 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - meal recipe requested from chat OpenAI
+2023-02-17 15:23:32,729 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv
+2023-02-17 15:23:52,409 - app.infra.logger - DEBUG - gpt.py:ask_gpt - response received from openai
+2023-02-17 15:23:52,410 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - response received from OpenAI
+2023-02-17 15:23:52,411 - app.infra.logger - DEBUG - file_system.py:write_file - content/greg/week1/Grilled Vegetables_recipe.json written successfully
+2023-02-17 15:23:52,413 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/greg/week1/Grilled Vegetables_recipe.json is written
+2023-02-17 15:23:52,414 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - Grilled Vegetables added to content/greg/week1//progress.json
+2023-02-17 15:23:52,415 - app.infra.logger - DEBUG - meal_recipe_message.py:get_conversation - conversation generated
+2023-02-17 15:23:52,416 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - meal recipe requested from chat OpenAI
+2023-02-17 15:23:52,423 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv
+2023-02-17 15:24:06,126 - app.infra.logger - DEBUG - gpt.py:ask_gpt - response received from openai
+2023-02-17 15:24:06,127 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - response received from OpenAI
+2023-02-17 15:24:06,129 - app.infra.logger - DEBUG - file_system.py:write_file - content/greg/week1/Oatmeal with Fruit_recipe.json written successfully
+2023-02-17 15:24:06,131 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/greg/week1/Oatmeal with Fruit_recipe.json is written
+2023-02-17 15:24:06,132 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - Oatmeal with Fruit added to content/greg/week1//progress.json
+2023-02-17 15:24:06,133 - app.infra.logger - DEBUG - meal_recipe_message.py:get_conversation - conversation generated
+2023-02-17 15:24:06,134 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - meal recipe requested from chat OpenAI
+2023-02-17 15:24:06,135 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv
+2023-02-17 15:24:23,377 - app.infra.logger - DEBUG - gpt.py:ask_gpt - response received from openai
+2023-02-17 15:24:23,379 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - response received from OpenAI
+2023-02-17 15:24:23,380 - app.infra.logger - DEBUG - file_system.py:write_file - content/greg/week1/Vegetable Salad_recipe.json written successfully
+2023-02-17 15:24:23,381 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/greg/week1/Vegetable Salad_recipe.json is written
+2023-02-17 15:24:23,382 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - Vegetable Salad added to content/greg/week1//progress.json
+2023-02-17 15:24:23,383 - app.infra.logger - DEBUG - meal_recipe_message.py:get_conversation - conversation generated
+2023-02-17 15:24:23,383 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - meal recipe requested from chat OpenAI
+2023-02-17 15:24:23,384 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv
+2023-02-17 15:24:53,921 - app.infra.logger - DEBUG - gpt.py:ask_gpt - response received from openai
+2023-02-17 15:24:53,923 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - response received from OpenAI
+2023-02-17 15:24:53,925 - app.infra.logger - DEBUG - file_system.py:write_file - content/greg/week1/Stuffed Peppers_recipe.json written successfully
+2023-02-17 15:24:53,927 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/greg/week1/Stuffed Peppers_recipe.json is written
+2023-02-17 15:24:53,928 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - Stuffed Peppers added to content/greg/week1//progress.json
+2023-02-17 15:24:53,929 - app.infra.logger - DEBUG - meal_recipe_message.py:get_conversation - conversation generated
+2023-02-17 15:24:53,930 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - meal recipe requested from chat OpenAI
+2023-02-17 15:24:53,932 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv
+2023-02-17 15:25:07,783 - app.infra.logger - DEBUG - gpt.py:ask_gpt - response received from openai
+2023-02-17 15:25:07,784 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - response received from OpenAI
+2023-02-17 15:25:07,784 - app.infra.logger - DEBUG - file_system.py:write_file - content/greg/week1/Yogurt Parfait_recipe.json written successfully
+2023-02-17 15:25:07,785 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/greg/week1/Yogurt Parfait_recipe.json is written
+2023-02-17 15:25:07,785 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - Yogurt Parfait added to content/greg/week1//progress.json
+2023-02-17 15:25:07,786 - app.infra.logger - DEBUG - meal_recipe_message.py:get_conversation - conversation generated
+2023-02-17 15:25:07,786 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - meal recipe requested from chat OpenAI
+2023-02-17 15:25:07,787 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv
+2023-02-17 15:25:29,213 - app.infra.logger - DEBUG - gpt.py:ask_gpt - response received from openai
+2023-02-17 15:25:29,214 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - response received from OpenAI
+2023-02-17 15:25:29,214 - app.infra.logger - DEBUG - file_system.py:write_file - content/greg/week1/Vegetable Wrap_recipe.json written successfully
+2023-02-17 15:25:29,215 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/greg/week1/Vegetable Wrap_recipe.json is written
+2023-02-17 15:25:29,216 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - Vegetable Wrap added to content/greg/week1//progress.json
+2023-02-17 15:25:29,216 - app.infra.logger - DEBUG - meal_recipe_message.py:get_conversation - conversation generated
+2023-02-17 15:25:29,216 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - meal recipe requested from chat OpenAI
+2023-02-17 15:25:29,217 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv
+2023-02-17 15:26:02,250 - app.infra.logger - DEBUG - gpt.py:ask_gpt - response received from openai
+2023-02-17 15:26:02,252 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - response received from OpenAI
+2023-02-17 15:26:02,254 - app.infra.logger - DEBUG - file_system.py:write_file - content/greg/week1/Veggie Burger_recipe.json written successfully
+2023-02-17 15:26:02,255 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/greg/week1/Veggie Burger_recipe.json is written
+2023-02-17 15:26:02,256 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - Veggie Burger added to content/greg/week1//progress.json
+2023-02-17 15:26:02,257 - app.infra.logger - DEBUG - meal_recipe_message.py:get_conversation - conversation generated
+2023-02-17 15:26:02,258 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - meal recipe requested from chat OpenAI
+2023-02-17 15:26:02,260 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv
+2023-02-17 15:26:22,168 - app.infra.logger - DEBUG - gpt.py:ask_gpt - response received from openai
+2023-02-17 15:26:22,169 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - response received from OpenAI
+2023-02-17 15:26:22,172 - app.infra.logger - DEBUG - file_system.py:write_file - content/greg/week1/Muesli Bowl_recipe.json written successfully
+2023-02-17 15:26:22,174 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/greg/week1/Muesli Bowl_recipe.json is written
+2023-02-17 15:26:22,175 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - Muesli Bowl added to content/greg/week1//progress.json
+2023-02-17 15:26:22,177 - app.infra.logger - DEBUG - meal_recipe_message.py:get_conversation - conversation generated
+2023-02-17 15:26:22,178 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - meal recipe requested from chat OpenAI
+2023-02-17 15:26:22,179 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv
+2023-02-17 15:26:40,104 - app.infra.logger - DEBUG - gpt.py:ask_gpt - response received from openai
+2023-02-17 15:26:40,108 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - response received from OpenAI
+2023-02-17 15:26:40,109 - app.infra.logger - DEBUG - file_system.py:write_file - content/greg/week1/Veggie Sandwich_recipe.json written successfully
+2023-02-17 15:26:40,110 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/greg/week1/Veggie Sandwich_recipe.json is written
+2023-02-17 15:26:40,111 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - Veggie Sandwich added to content/greg/week1//progress.json
+2023-02-17 15:26:40,112 - app.infra.logger - DEBUG - meal_recipe_message.py:get_conversation - conversation generated
+2023-02-17 15:26:40,113 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - meal recipe requested from chat OpenAI
+2023-02-17 15:26:40,114 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv
+2023-02-17 15:26:59,555 - app.infra.logger - DEBUG - gpt.py:ask_gpt - response received from openai
+2023-02-17 15:26:59,556 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - response received from OpenAI
+2023-02-17 15:26:59,556 - app.infra.logger - DEBUG - file_system.py:write_file - content/greg/week1/Vegetable Stir-Fry_recipe.json written successfully
+2023-02-17 15:26:59,557 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/greg/week1/Vegetable Stir-Fry_recipe.json is written
+2023-02-17 15:26:59,558 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - Vegetable Stir-Fry added to content/greg/week1//progress.json
