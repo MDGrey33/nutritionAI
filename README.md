@@ -7,25 +7,41 @@ The app also allows users to add new personal information, such as their height,
 The Meal Planner app is built using the following technologies:
 
 - Python 3.11
-- Flask
-- Celery
-- Redis
+- Flask 2.2.2
+- Celery 5.2.7
+- Redis 4.5.1
 - JSON
 
 ## Getting Started
+To get started with the Meal Planner app, follow these steps:
 
-To get started with the Meal Planner app, first, make sure you have Redis installed on your machine. Then, run the following command to start the Redis container:
+Clone the repository to your local machine using the command:
+
+      git clone https://github.com/MDGrey33/nutritionAI.git
+
+Create a virtual environment using Python 3.11:
+
+      python3.11 -m venv venv
+
+Activate the virtual environment:
+
+      source venv/bin/activate
+
+Install the required packages by running:
+
+      pip install -r requirements.txt
+
+Start the Redis container by running:
 
       docker run --name some-redis -p 6379:6379 -d redis
 
-Next, start the Flask server by running:
+Start the Flask server by running:
 
       flask --debug run --port=5001
 
-Finally, start the Celery worker by running:
+Start the Celery worker by running:
 
       celery -A app.infra.app_celery.celery worker --loglevel=info
-
 
 You can now access the app by going to `http://localhost:5001`.
 
@@ -37,8 +53,8 @@ The Meal Planner app has the following main functionality:
 
 - Allows users to add new personal information, such as their height, weight, and activity level, to create personalized meal plans.
 - Uses chatgpt to generate meal plans based on user preferences and dietary restrictions.
-- Allows users to generate new meal plans and recipes using the `generate_recipes` route.
-- Allows users to view their meal plans and recipes.
+- Allows users to generate new meal plans.
+- Allows users to generate recipes for the meals in the plans.
 
 ## Contributing
 
