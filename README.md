@@ -29,6 +29,8 @@ Finally, start the Celery worker by running:
 
 You can now access the app by going to `http://localhost:5001`.
 
+find the postman collection in `nutrition.postman_collection.json` in the root directory.
+
 ## Main Functionality
 
 The Meal Planner app has the following main functionality:

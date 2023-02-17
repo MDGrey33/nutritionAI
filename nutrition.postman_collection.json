@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "76fcfe13-ba5b-4a49-abf8-7fe4ac9a245a",
+		"name": "nutrition",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6956921"
+	},
+	"item": [
+		{
+			"name": "Create user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Maija Sabule\",\n    \"login\": \"maijasabule\",\n    \"gender\": \"female\",\n    \"height\": \"168\",\n    \"weight\": \"85\",\n    \"age\": \"29\",\n    \"activity_level\": \"active\",\n    \"diet\": \"Anything goes\",\n    \"meals_per_day\": \"3\",\n    \"other_notes\": \"Avoid fat\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5001/person",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5001",
+					"path": [
+						"person"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Make meal plan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5001/meal_plan/maijasabule",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5001",
+					"path": [
+						"meal_plan",
+						"maijasabule"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Generate Recipes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5001/generate_recipes/maijasabule?task_id=b591de7e-ffd0-49eb-92ef-4bca7c6685a6",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5001",
+					"path": [
+						"generate_recipes",
+						"maijasabule"
+					],
+					"query": [
+						{
+							"key": "task_id",
+							"value": "b591de7e-ffd0-49eb-92ef-4bca7c6685a6"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
