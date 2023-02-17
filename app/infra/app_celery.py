@@ -6,13 +6,16 @@ from app.infra import logger
 
 
 app = Flask(__name__)
+logger.logger.debug('flask app initiated in celery')
 
 
 @celery.task
 def make_meal_plan_task(login):
+    logger.logger.debug('celery sending meal plan request')
     create_meal_plan(login)
 
 
 @celery.task
 def generate_recipes_task(login):
+    logger.logger.debug('celery sending recipe request')
     generate_meal_recipes(login)

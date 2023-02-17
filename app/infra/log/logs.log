@@ -193,3 +193,219 @@
 2023-02-16 17:15:42,618 - app.infra.logger - DEBUG - file_system.py:write_file - content/maijasabule/week1/Ginger Chicken_recipe.json written successfully
 2023-02-16 17:15:42,619 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/maijasabule/week1/Ginger Chicken_recipe.json is written
 2023-02-16 17:15:42,621 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - Ginger Chicken added to content/maijasabule/week1//progress.json
+2023-02-17 11:55:39,506 - app.infra.logger - DEBUG - __init__.py:<module> - flask app initiated
+2023-02-17 11:55:39,507 - app.infra.logger - DEBUG - __init__.py:<module> - general routes imported
+2023-02-17 11:55:41,172 - app.infra.logger - DEBUG - plan.py:<module> - Defining routes
+2023-02-17 11:55:41,173 - app.infra.logger - DEBUG - __init__.py:<module> - plan routes imported
+2023-02-17 11:56:05,243 - app.infra.logger - DEBUG - __init__.py:<module> - flask app initiated
+2023-02-17 11:56:05,243 - app.infra.logger - DEBUG - __init__.py:<module> - general routes imported
+2023-02-17 11:56:05,360 - app.infra.logger - DEBUG - plan.py:<module> - Defining routes
+2023-02-17 11:56:05,360 - app.infra.logger - DEBUG - __init__.py:<module> - plan routes imported
+2023-02-17 11:56:05,457 - app.infra.logger - DEBUG - __init__.py:<module> - flask app initiated
+2023-02-17 11:56:05,457 - app.infra.logger - DEBUG - __init__.py:<module> - general routes imported
+2023-02-17 11:56:05,573 - app.infra.logger - DEBUG - plan.py:<module> - Defining routes
+2023-02-17 11:56:05,573 - app.infra.logger - DEBUG - __init__.py:<module> - plan routes imported
+2023-02-17 11:56:15,155 - app.infra.logger - DEBUG - __init__.py:<module> - flask app initiated
+2023-02-17 11:56:15,155 - app.infra.logger - DEBUG - __init__.py:<module> - general routes imported
+2023-02-17 11:56:15,250 - app.infra.logger - DEBUG - plan.py:<module> - Defining routes
+2023-02-17 11:56:15,251 - app.infra.logger - DEBUG - __init__.py:<module> - plan routes imported
+2023-02-17 12:01:23,268 - app.infra.logger - DEBUG - plan.py:add_new_person_route - Add new person route summoned
+2023-02-17 12:01:50,850 - app.infra.logger - DEBUG - plan.py:add_new_person_route - Add new person route summoned
+2023-02-17 12:01:50,851 - app.infra.logger - DEBUG - person.py:__init__ - Person initialization complete
+2023-02-17 12:01:50,851 - app.infra.logger - DEBUG - plan.py:add_person_object - Maija Sabule Person object created
+2023-02-17 12:01:50,852 - app.infra.logger - DEBUG - person.py:create - person adding to json complete
+2023-02-17 12:01:50,852 - app.infra.logger - DEBUG - plan.py:add_person_object - Maija Sabule Person object added to json
+2023-02-17 12:13:01,947 - app.infra.logger - DEBUG - __init__.py:<module> - flask app initiated
+2023-02-17 12:13:01,947 - app.infra.logger - DEBUG - __init__.py:<module> - general routes imported
+2023-02-17 12:13:01,974 - app.infra.logger - DEBUG - celery_config.py:<module> - celery config initiated flask app
+2023-02-17 12:13:01,975 - app.infra.logger - DEBUG - celery_config.py:<module> - updating celery configuration
+2023-02-17 12:13:02,095 - app.infra.logger - DEBUG - app_celery.py:<module> - flask app initiated in celery
+2023-02-17 12:13:02,095 - app.infra.logger - DEBUG - plan.py:<module> - defining routes
+2023-02-17 12:13:02,095 - app.infra.logger - DEBUG - __init__.py:<module> - plan routes imported
+2023-02-17 12:13:12,869 - app.infra.logger - DEBUG - __init__.py:<module> - flask app initiated
+2023-02-17 12:13:12,869 - app.infra.logger - DEBUG - __init__.py:<module> - general routes imported
+2023-02-17 12:13:12,888 - app.infra.logger - DEBUG - celery_config.py:<module> - celery config initiated flask app
+2023-02-17 12:13:12,888 - app.infra.logger - DEBUG - celery_config.py:<module> - updating celery configuration
+2023-02-17 12:13:12,987 - app.infra.logger - DEBUG - app_celery.py:<module> - flask app initiated in celery
+2023-02-17 12:13:12,987 - app.infra.logger - DEBUG - plan.py:<module> - defining routes
+2023-02-17 12:13:12,987 - app.infra.logger - DEBUG - __init__.py:<module> - plan routes imported
+2023-02-17 12:13:13,072 - app.infra.logger - DEBUG - __init__.py:<module> - flask app initiated
+2023-02-17 12:13:13,073 - app.infra.logger - DEBUG - __init__.py:<module> - general routes imported
+2023-02-17 12:13:13,092 - app.infra.logger - DEBUG - celery_config.py:<module> - celery config initiated flask app
+2023-02-17 12:13:13,092 - app.infra.logger - DEBUG - celery_config.py:<module> - updating celery configuration
+2023-02-17 12:13:13,189 - app.infra.logger - DEBUG - app_celery.py:<module> - flask app initiated in celery
+2023-02-17 12:13:13,189 - app.infra.logger - DEBUG - plan.py:<module> - defining routes
+2023-02-17 12:13:13,190 - app.infra.logger - DEBUG - __init__.py:<module> - plan routes imported
+2023-02-17 12:13:18,057 - app.infra.logger - DEBUG - __init__.py:<module> - flask app initiated
+2023-02-17 12:13:18,057 - app.infra.logger - DEBUG - __init__.py:<module> - general routes imported
+2023-02-17 12:13:18,057 - app.infra.logger - DEBUG - celery_config.py:<module> - celery config initiated flask app
+2023-02-17 12:13:18,058 - app.infra.logger - DEBUG - celery_config.py:<module> - updating celery configuration
+2023-02-17 12:13:18,142 - app.infra.logger - DEBUG - app_celery.py:<module> - flask app initiated in celery
+2023-02-17 12:13:18,142 - app.infra.logger - DEBUG - plan.py:<module> - defining routes
+2023-02-17 12:13:18,143 - app.infra.logger - DEBUG - __init__.py:<module> - plan routes imported
+2023-02-17 12:13:27,574 - app.infra.logger - DEBUG - plan.py:make_meal_plan_route - make meal plan route summoned
+2023-02-17 12:13:27,624 - app.infra.logger - DEBUG - app_celery.py:make_meal_plan_task - celery sending meal plan request
+2023-02-17 12:13:27,625 - app.infra.logger - DEBUG - person.py:read - person reading complete
+2023-02-17 12:13:27,626 - app.infra.logger - DEBUG - person.py:__init__ - person initialization complete
+2023-02-17 12:13:27,627 - app.infra.logger - DEBUG - person.py:calculate_calories - TDEE calculated to 2425.6725
+2023-02-17 12:13:27,627 - app.infra.logger - DEBUG - meal_plan_message.py:get_conversation - 3 meal plan found
+2023-02-17 12:13:27,628 - app.infra.logger - DEBUG - meal_plan_message.py:get_conversation - Conversation generated
+2023-02-17 12:13:27,628 - app.infra.logger - DEBUG - meal_plan.py:create_meal_plan - request sent to OpenAI
+2023-02-17 12:13:27,630 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv
+2023-02-17 12:15:18,478 - app.infra.logger - DEBUG - gpt.py:ask_gpt - response received from openai
+2023-02-17 12:15:18,479 - app.infra.logger - DEBUG - meal_plan.py:create_meal_plan - response received from OpenAI
+2023-02-17 12:15:18,480 - app.infra.logger - DEBUG - file_system.py:write_file - content/maijasabule/weekly_plan.json written successfully
+2023-02-17 12:15:18,480 - app.infra.logger - DEBUG - meal_plan.py:create_meal_plan - content/maijasabule/weekly_plan.json written
+2023-02-17 12:17:23,961 - app.infra.logger - DEBUG - __init__.py:<module> - flask app initiated
+2023-02-17 12:17:23,961 - app.infra.logger - DEBUG - __init__.py:<module> - general routes imported
+2023-02-17 12:17:23,986 - app.infra.logger - DEBUG - celery_config.py:<module> - celery config initiated flask app
+2023-02-17 12:17:23,987 - app.infra.logger - DEBUG - celery_config.py:<module> - updating celery configuration
+2023-02-17 12:17:24,105 - app.infra.logger - DEBUG - app_celery.py:<module> - flask app initiated in celery
+2023-02-17 12:17:24,105 - app.infra.logger - DEBUG - plan.py:<module> - defining routes
+2023-02-17 12:17:24,106 - app.infra.logger - DEBUG - __init__.py:<module> - plan routes imported
+2023-02-17 12:17:36,711 - app.infra.logger - DEBUG - __init__.py:<module> - flask app initiated
+2023-02-17 12:17:36,711 - app.infra.logger - DEBUG - __init__.py:<module> - general routes imported
+2023-02-17 12:17:36,730 - app.infra.logger - DEBUG - celery_config.py:<module> - celery config initiated flask app
+2023-02-17 12:17:36,730 - app.infra.logger - DEBUG - celery_config.py:<module> - updating celery configuration
+2023-02-17 12:17:36,830 - app.infra.logger - DEBUG - app_celery.py:<module> - flask app initiated in celery
+2023-02-17 12:17:36,830 - app.infra.logger - DEBUG - plan.py:<module> - defining routes
+2023-02-17 12:17:36,831 - app.infra.logger - DEBUG - __init__.py:<module> - plan routes imported
+2023-02-17 12:17:36,915 - app.infra.logger - DEBUG - __init__.py:<module> - flask app initiated
+2023-02-17 12:17:36,915 - app.infra.logger - DEBUG - __init__.py:<module> - general routes imported
+2023-02-17 12:17:36,934 - app.infra.logger - DEBUG - celery_config.py:<module> - celery config initiated flask app
+2023-02-17 12:17:36,934 - app.infra.logger - DEBUG - celery_config.py:<module> - updating celery configuration
+2023-02-17 12:17:37,031 - app.infra.logger - DEBUG - app_celery.py:<module> - flask app initiated in celery
+2023-02-17 12:17:37,031 - app.infra.logger - DEBUG - plan.py:<module> - defining routes
+2023-02-17 12:17:37,032 - app.infra.logger - DEBUG - __init__.py:<module> - plan routes imported
+2023-02-17 12:17:42,517 - app.infra.logger - DEBUG - __init__.py:<module> - flask app initiated
+2023-02-17 12:17:42,517 - app.infra.logger - DEBUG - __init__.py:<module> - general routes imported
+2023-02-17 12:17:42,519 - app.infra.logger - DEBUG - celery_config.py:<module> - celery config initiated flask app
+2023-02-17 12:17:42,519 - app.infra.logger - DEBUG - celery_config.py:<module> - updating celery configuration
+2023-02-17 12:17:42,605 - app.infra.logger - DEBUG - app_celery.py:<module> - flask app initiated in celery
+2023-02-17 12:17:42,605 - app.infra.logger - DEBUG - plan.py:<module> - defining routes
+2023-02-17 12:17:42,605 - app.infra.logger - DEBUG - __init__.py:<module> - plan routes imported
+2023-02-17 12:18:35,425 - app.infra.logger - DEBUG - plan.py:add_new_person_route - add new person route summoned
+2023-02-17 12:18:35,425 - app.infra.logger - DEBUG - person.py:__init__ - person initialization complete
+2023-02-17 12:18:35,425 - app.infra.logger - DEBUG - plan.py:add_person_object - Arsen Shamkhalov Person object created
+2023-02-17 12:18:35,425 - app.infra.logger - DEBUG - person.py:create - person adding to json complete
+2023-02-17 12:18:35,425 - app.infra.logger - DEBUG - plan.py:add_person_object - Arsen Shamkhalov Person object added to json
+2023-02-17 12:19:09,316 - app.infra.logger - DEBUG - plan.py:make_meal_plan_route - make meal plan route summoned
+2023-02-17 12:19:09,380 - app.infra.logger - DEBUG - app_celery.py:make_meal_plan_task - celery sending meal plan request
+2023-02-17 12:19:09,382 - app.infra.logger - DEBUG - person.py:read - person reading complete
+2023-02-17 12:19:09,383 - app.infra.logger - DEBUG - person.py:__init__ - person initialization complete
+2023-02-17 12:19:09,388 - app.infra.logger - DEBUG - person.py:calculate_calories - TDEE calculated to 3963.1020000000003
+2023-02-17 12:19:09,388 - app.infra.logger - DEBUG - meal_plan_message.py:get_conversation - Conversation generated
+2023-02-17 12:19:09,389 - app.infra.logger - DEBUG - meal_plan.py:create_meal_plan - request sent to OpenAI
+2023-02-17 12:19:09,390 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv
+2023-02-17 12:19:57,525 - app.infra.logger - DEBUG - plan.py:generate_recipes_route - generate recipes route summoned
+2023-02-17 12:19:57,533 - app.infra.logger - DEBUG - plan.py:generate_recipes - meal plan not completed yet, task id: bdba6c61-1027-469c-9cb5-b62223881a2b
+2023-02-17 12:20:57,800 - app.infra.logger - DEBUG - gpt.py:ask_gpt - response received from openai
+2023-02-17 12:20:57,801 - app.infra.logger - DEBUG - meal_plan.py:create_meal_plan - response received from OpenAI
+2023-02-17 12:20:57,802 - app.infra.logger - DEBUG - file_system.py:write_file - content/arsenshamkhalov/weekly_plan.json written successfully
+2023-02-17 12:20:57,802 - app.infra.logger - DEBUG - meal_plan.py:create_meal_plan - content/arsenshamkhalov/weekly_plan.json written
+2023-02-17 12:21:30,033 - app.infra.logger - DEBUG - plan.py:generate_recipes_route - generate recipes route summoned
+2023-02-17 12:21:30,049 - app.infra.logger - DEBUG - plan.py:generate_recipes - meal recipes task added to queue, task id: 45e0c7d6-b9b6-4859-8413-66a9beb8e9d3
+2023-02-17 12:21:30,056 - app.infra.logger - DEBUG - app_celery.py:generate_recipes_task - celery sending recipe request
+2023-02-17 12:21:30,058 - app.infra.logger - DEBUG - person.py:read - person reading complete
+2023-02-17 12:21:30,064 - app.infra.logger - DEBUG - person.py:__init__ - person initialization complete
+2023-02-17 12:21:30,070 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - person read successfully from JSON
+2023-02-17 12:21:30,071 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/arsenshamkhalov/week1/ not found and created successfully 
+2023-02-17 12:21:30,073 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - meal plan content/arsenshamkhalov/weekly_plan.json loaded
+2023-02-17 12:21:30,075 - app.infra.logger - DEBUG - meal_recipe_message.py:get_conversation - conversation generated
+2023-02-17 12:21:30,077 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - meal recipe requested from chat OpenAI
+2023-02-17 12:21:30,081 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv
+2023-02-17 12:21:58,631 - app.infra.logger - DEBUG - gpt.py:ask_gpt - response received from openai
+2023-02-17 12:21:58,634 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - response received from OpenAI
+2023-02-17 12:21:58,636 - app.infra.logger - DEBUG - file_system.py:write_file - content/arsenshamkhalov/week1/Tuna salad_recipe.json written successfully
+2023-02-17 12:21:58,637 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/arsenshamkhalov/week1/Tuna salad_recipe.json is written
+2023-02-17 12:21:58,639 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - Tuna salad added to content/arsenshamkhalov/week1//progress.json
+2023-02-17 12:21:58,640 - app.infra.logger - DEBUG - meal_recipe_message.py:get_conversation - conversation generated
+2023-02-17 12:21:58,641 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - meal recipe requested from chat OpenAI
+2023-02-17 12:21:58,642 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv
+2023-02-17 12:22:22,272 - app.infra.logger - DEBUG - gpt.py:ask_gpt - response received from openai
+2023-02-17 12:22:22,273 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - response received from OpenAI
+2023-02-17 12:22:22,273 - app.infra.logger - DEBUG - file_system.py:write_file - content/arsenshamkhalov/week1/Grilled chicken breast_recipe.json written successfully
+2023-02-17 12:22:22,274 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/arsenshamkhalov/week1/Grilled chicken breast_recipe.json is written
+2023-02-17 12:22:22,274 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - Grilled chicken breast added to content/arsenshamkhalov/week1//progress.json
+2023-02-17 12:22:22,275 - app.infra.logger - DEBUG - meal_recipe_message.py:get_conversation - conversation generated
+2023-02-17 12:22:22,275 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - meal recipe requested from chat OpenAI
+2023-02-17 12:22:22,276 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv
+2023-02-17 12:22:53,916 - app.infra.logger - DEBUG - gpt.py:ask_gpt - response received from openai
+2023-02-17 12:22:53,919 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - response received from OpenAI
+2023-02-17 12:22:53,921 - app.infra.logger - DEBUG - file_system.py:write_file - content/arsenshamkhalov/week1/Turkey sandwich_recipe.json written successfully
+2023-02-17 12:22:53,922 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/arsenshamkhalov/week1/Turkey sandwich_recipe.json is written
+2023-02-17 12:22:53,924 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - Turkey sandwich added to content/arsenshamkhalov/week1//progress.json
+2023-02-17 12:22:53,925 - app.infra.logger - DEBUG - meal_recipe_message.py:get_conversation - conversation generated
+2023-02-17 12:22:53,926 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - meal recipe requested from chat OpenAI
+2023-02-17 12:22:53,928 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv
+2023-02-17 12:23:21,789 - app.infra.logger - DEBUG - gpt.py:ask_gpt - response received from openai
+2023-02-17 12:23:21,791 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - response received from OpenAI
+2023-02-17 12:23:21,793 - app.infra.logger - DEBUG - file_system.py:write_file - content/arsenshamkhalov/week1/Baked salmon_recipe.json written successfully
+2023-02-17 12:23:21,794 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/arsenshamkhalov/week1/Baked salmon_recipe.json is written
+2023-02-17 12:23:21,795 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - Baked salmon added to content/arsenshamkhalov/week1//progress.json
+2023-02-17 12:23:21,796 - app.infra.logger - DEBUG - meal_recipe_message.py:get_conversation - conversation generated
+2023-02-17 12:23:21,797 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - meal recipe requested from chat OpenAI
+2023-02-17 12:23:21,798 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv
+2023-02-17 12:23:44,674 - app.infra.logger - DEBUG - gpt.py:ask_gpt - response received from openai
+2023-02-17 12:23:44,677 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - response received from OpenAI
+2023-02-17 12:23:44,679 - app.infra.logger - DEBUG - file_system.py:write_file - content/arsenshamkhalov/week1/Grilled turkey burger_recipe.json written successfully
+2023-02-17 12:23:44,680 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/arsenshamkhalov/week1/Grilled turkey burger_recipe.json is written
+2023-02-17 12:23:44,682 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - Grilled turkey burger added to content/arsenshamkhalov/week1//progress.json
+2023-02-17 12:23:44,683 - app.infra.logger - DEBUG - meal_recipe_message.py:get_conversation - conversation generated
+2023-02-17 12:23:44,684 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - meal recipe requested from chat OpenAI
+2023-02-17 12:23:44,685 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv
+2023-02-17 12:24:28,593 - app.infra.logger - DEBUG - gpt.py:ask_gpt - response received from openai
+2023-02-17 12:24:28,595 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - response received from OpenAI
+2023-02-17 12:24:28,597 - app.infra.logger - DEBUG - file_system.py:write_file - content/arsenshamkhalov/week1/Tilapia with vegetables_recipe.json written successfully
+2023-02-17 12:24:28,598 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/arsenshamkhalov/week1/Tilapia with vegetables_recipe.json is written
+2023-02-17 12:24:28,600 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - Tilapia with vegetables added to content/arsenshamkhalov/week1//progress.json
+2023-02-17 12:24:28,601 - app.infra.logger - DEBUG - meal_recipe_message.py:get_conversation - conversation generated
+2023-02-17 12:24:28,601 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - meal recipe requested from chat OpenAI
+2023-02-17 12:24:28,603 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv
+2023-02-17 12:24:47,142 - app.infra.logger - DEBUG - __init__.py:<module> - flask app initiated
+2023-02-17 12:24:47,142 - app.infra.logger - DEBUG - __init__.py:<module> - general routes imported
+2023-02-17 12:24:47,170 - app.infra.logger - DEBUG - celery_config.py:<module> - celery config initiated flask app
+2023-02-17 12:24:47,171 - app.infra.logger - DEBUG - celery_config.py:<module> - updating celery configuration
+2023-02-17 12:24:47,293 - app.infra.logger - DEBUG - app_celery.py:<module> - flask app initiated in celery
+2023-02-17 12:24:47,293 - app.infra.logger - DEBUG - plan.py:<module> - defining routes
+2023-02-17 12:24:47,294 - app.infra.logger - DEBUG - __init__.py:<module> - plan routes imported
+2023-02-17 12:24:49,320 - app.infra.logger - DEBUG - gpt.py:ask_gpt - response received from openai
+2023-02-17 12:24:49,321 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - response received from OpenAI
+2023-02-17 12:24:49,322 - app.infra.logger - DEBUG - file_system.py:write_file - content/arsenshamkhalov/week1/Egg and spinach wrap_recipe.json written successfully
+2023-02-17 12:24:49,323 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/arsenshamkhalov/week1/Egg and spinach wrap_recipe.json is written
+2023-02-17 12:24:49,324 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - Egg and spinach wrap added to content/arsenshamkhalov/week1//progress.json
+2023-02-17 12:24:49,325 - app.infra.logger - DEBUG - meal_recipe_message.py:get_conversation - conversation generated
+2023-02-17 12:24:49,326 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - meal recipe requested from chat OpenAI
+2023-02-17 12:24:49,327 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv
+2023-02-17 12:25:12,461 - app.infra.logger - DEBUG - gpt.py:ask_gpt - response received from openai
+2023-02-17 12:25:12,462 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - response received from OpenAI
+2023-02-17 12:25:12,463 - app.infra.logger - DEBUG - file_system.py:write_file - content/arsenshamkhalov/week1/Grilled shrimp_recipe.json written successfully
+2023-02-17 12:25:12,463 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/arsenshamkhalov/week1/Grilled shrimp_recipe.json is written
+2023-02-17 12:25:12,464 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - Grilled shrimp added to content/arsenshamkhalov/week1//progress.json
+2023-02-17 12:25:12,464 - app.infra.logger - DEBUG - meal_recipe_message.py:get_conversation - conversation generated
+2023-02-17 12:25:12,464 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - meal recipe requested from chat OpenAI
+2023-02-17 12:25:12,465 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv
+2023-02-17 12:25:35,303 - app.infra.logger - DEBUG - gpt.py:ask_gpt - response received from openai
+2023-02-17 12:25:35,306 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - response received from OpenAI
+2023-02-17 12:25:35,307 - app.infra.logger - DEBUG - file_system.py:write_file - content/arsenshamkhalov/week1/Steak and potatoes_recipe.json written successfully
+2023-02-17 12:25:35,308 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/arsenshamkhalov/week1/Steak and potatoes_recipe.json is written
+2023-02-17 12:25:35,310 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - Steak and potatoes added to content/arsenshamkhalov/week1//progress.json
+2023-02-17 12:25:35,311 - app.infra.logger - DEBUG - meal_recipe_message.py:get_conversation - conversation generated
+2023-02-17 12:25:35,312 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - meal recipe requested from chat OpenAI
+2023-02-17 12:25:35,313 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv
+2023-02-17 12:26:00,509 - app.infra.logger - DEBUG - gpt.py:ask_gpt - response received from openai
+2023-02-17 12:26:00,512 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - response received from OpenAI
+2023-02-17 12:26:00,513 - app.infra.logger - DEBUG - file_system.py:write_file - content/arsenshamkhalov/week1/Grilled tuna steak_recipe.json written successfully
+2023-02-17 12:26:00,515 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/arsenshamkhalov/week1/Grilled tuna steak_recipe.json is written
+2023-02-17 12:26:00,516 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - Grilled tuna steak added to content/arsenshamkhalov/week1//progress.json
+2023-02-17 12:26:00,517 - app.infra.logger - DEBUG - meal_recipe_message.py:get_conversation - conversation generated
+2023-02-17 12:26:00,518 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - meal recipe requested from chat OpenAI
+2023-02-17 12:26:00,520 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv
+2023-02-17 12:26:19,426 - app.infra.logger - DEBUG - gpt.py:ask_gpt - response received from openai
+2023-02-17 12:26:19,426 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - response received from OpenAI
+2023-02-17 12:26:19,427 - app.infra.logger - DEBUG - file_system.py:write_file - content/arsenshamkhalov/week1/Turkey and vegetable stir fry_recipe.json written successfully
+2023-02-17 12:26:19,428 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/arsenshamkhalov/week1/Turkey and vegetable stir fry_recipe.json is written
+2023-02-17 12:26:19,429 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - Turkey and vegetable stir fry added to content/arsenshamkhalov/week1//progress.json
+2023-02-17 12:26:19,429 - app.infra.logger - DEBUG - meal_recipe_message.py:get_conversation - conversation generated
+2023-02-17 12:26:19,430 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - meal recipe requested from chat OpenAI
+2023-02-17 12:26:19,431 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv

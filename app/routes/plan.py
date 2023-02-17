@@ -29,19 +29,19 @@ def generate_recipes(login):
     task = AsyncResult(task_id, app=celery)
     if task.state == 'SUCCESS':
         result = generate_recipes_task.apply_async(args=[login])
-        logger.logger.debug("Meal recipes task added to queue, task id: {}".format(result.id))
+        logger.logger.debug("meal recipes task added to queue, task id: {}".format(result.id))
         return "Meal recipes task added to queue, task id: {}".format(result.id)
     else:
-        logger.logger.debug("Meal plan not completed yet, task id: {}".format(task_id))
+        logger.logger.debug("meal plan not completed yet, task id: {}".format(task_id))
         return "Meal plan not completed yet, task id: {}".format(task_id)
 
 
-logger.logger.debug("Defining routes")
+logger.logger.debug("defining routes")
 
 
 @app.route("/person", methods=["POST"])
 def add_new_person_route():
-    logger.logger.debug("Add new person route summoned")
+    logger.logger.debug("add new person route summoned")
     data = request.get_json()
     return add_person_object(data)
 

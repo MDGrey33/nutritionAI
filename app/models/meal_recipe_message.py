@@ -37,5 +37,5 @@ The units should be following the European standard.
 The instructions should be a list
 Respond inside the following JSON
 {json_string}"""
-    logger.logger.debug('Conversation generated')
+    logger.logger.debug('conversation generated')
     return conversation

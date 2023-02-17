@@ -17,7 +17,7 @@ class Person:
         self.meals_per_day = meals_per_day
         self.other_notes = other_notes
         self.profile_path = "content/" + self.login
-        logger.logger.debug('Person initialization complete')
+        logger.logger.debug('person initialization complete')
 
     def create(self):
         print(self.login)

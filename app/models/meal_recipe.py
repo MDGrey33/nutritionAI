@@ -32,7 +32,7 @@ def generate_meal_recipes(login):
             for meal in day['meals']:
                 if meal['name'] not in progress:
                     conversation = get_conversation(meal)
-                    logger.logger.debug(f'Meal recipe requested from chat OpenAI')
+                    logger.logger.debug(f'meal recipe requested from chat OpenAI')
                     response = ask_gpt(conversation)
                     logger.logger.debug(f'response received from OpenAI')
                     meal_file_path = '{}{}_recipe.json'.format(meals_path, meal['name'])
@@ -44,4 +44,4 @@ def generate_meal_recipes(login):
                     logger.logger.debug(f'{meal["name"]} added to {progress_file_path}')
     else:
         pass
-        logger.logger.debug("Person not found.")
+        logger.logger.debug("person not found.")

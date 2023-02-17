@@ -8,6 +8,7 @@ def ask_gpt(prompt: str):
     load_dotenv()
     openai.api_key = os.getenv("OPENAI_API_KEY")
     logger.logger.debug("OPENAI_API_KEY key loaded from dotenv")
+    logger.logger.debug("sending OpenAI completion request")
     response = openai.Completion.create(
         model='text-davinci-003',
         prompt=prompt,
