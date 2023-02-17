@@ -409,3 +409,24 @@
 2023-02-17 12:26:19,429 - app.infra.logger - DEBUG - meal_recipe_message.py:get_conversation - conversation generated
 2023-02-17 12:26:19,430 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - meal recipe requested from chat OpenAI
 2023-02-17 12:26:19,431 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv
+2023-02-17 12:26:35,815 - app.infra.logger - DEBUG - gpt.py:ask_gpt - response received from openai
+2023-02-17 12:26:35,816 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - response received from OpenAI
+2023-02-17 12:26:35,816 - app.infra.logger - DEBUG - file_system.py:write_file - content/arsenshamkhalov/week1/Grilled lean pork chop_recipe.json written successfully
+2023-02-17 12:26:35,817 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/arsenshamkhalov/week1/Grilled lean pork chop_recipe.json is written
+2023-02-17 12:26:35,817 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - Grilled lean pork chop added to content/arsenshamkhalov/week1//progress.json
+2023-02-17 12:26:35,817 - app.infra.logger - DEBUG - meal_recipe_message.py:get_conversation - conversation generated
+2023-02-17 12:26:35,818 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - meal recipe requested from chat OpenAI
+2023-02-17 12:26:35,818 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv
+2023-02-17 12:27:01,724 - app.infra.logger - DEBUG - gpt.py:ask_gpt - response received from openai
+2023-02-17 12:27:01,730 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - response received from OpenAI
+2023-02-17 12:27:01,732 - app.infra.logger - DEBUG - file_system.py:write_file - content/arsenshamkhalov/week1/Beef and vegetable stir fry_recipe.json written successfully
+2023-02-17 12:27:01,734 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/arsenshamkhalov/week1/Beef and vegetable stir fry_recipe.json is written
+2023-02-17 12:27:01,737 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - Beef and vegetable stir fry added to content/arsenshamkhalov/week1//progress.json
+2023-02-17 12:27:01,738 - app.infra.logger - DEBUG - meal_recipe_message.py:get_conversation - conversation generated
+2023-02-17 12:27:01,741 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - meal recipe requested from chat OpenAI
+2023-02-17 12:27:01,746 - app.infra.logger - DEBUG - gpt.py:ask_gpt - OPENAI_API_KEY key loaded from dotenv
+2023-02-17 12:27:21,798 - app.infra.logger - DEBUG - gpt.py:ask_gpt - response received from openai
+2023-02-17 12:27:21,801 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - response received from OpenAI
+2023-02-17 12:27:21,803 - app.infra.logger - DEBUG - file_system.py:write_file - content/arsenshamkhalov/week1/Grilled turkey breast_recipe.json written successfully
+2023-02-17 12:27:21,804 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - content/arsenshamkhalov/week1/Grilled turkey breast_recipe.json is written
+2023-02-17 12:27:21,807 - app.infra.logger - DEBUG - meal_recipe.py:generate_meal_recipes - Grilled turkey breast added to content/arsenshamkhalov/week1//progress.json

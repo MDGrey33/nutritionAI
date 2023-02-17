@@ -3,11 +3,12 @@
 1. Implement error handling
 2. Implement input validation
 3. Learn about celery and fine tune
-4. Pull file management to one package
-5. Make mobile app to
+4. split generate recipe into multiple parallel celery tasks
+5. Pull file management to one package
+6. Make mobile app to
    1. Show meals 
    2. Submit to health app
-6. Implement google authentication for
+7. Implement google authentication for
 
 # Deployment
 
