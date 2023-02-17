@@ -84,15 +84,3 @@ If you are interested in training the Ada model, please reach out to us for more
    1. Show meals 
    2. Submit to health app
 9. Implement google authentication for
-
-# Deployment
-
-Start redis in docker container
-
-    docker run --name some-redis -p 6379:6379 -d redis
-Start Flask
-
-    flask --debug run --port=5001
-Start Celery
-
-    celery -A app.infra.app_celery.celery worker --loglevel=info
