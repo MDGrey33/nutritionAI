@@ -1,6 +1,6 @@
 import logging
-import os
 from logging.handlers import RotatingFileHandler
+import os
 
 
 # Define the log file path
@@ -25,7 +25,8 @@ handler = RotatingFileHandler(
 handler.setLevel(logging.DEBUG)
 
 # Define the formatter for the logs
-formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(filename)s:%(funcName)s - %(message)s')
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(pathname)s:%(funcName)s - %(message)s')
+
 
 handler.setFormatter(formatter)
 

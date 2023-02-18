@@ -1,0 +1,52 @@
+2023-02-18 22:49:12,892 - app.infra.logger - DEBUG - person.py:<module> - person routes loaded
+2023-02-18 22:52:18,554 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/routes/person.py:<module> - person routes loaded
+2023-02-18 22:54:08,157 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/routes/person.py:<module> - person routes loaded
+2023-02-18 23:29:26,540 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/routes/person.py:<module> - person routes loaded
+2023-02-18 23:34:12,530 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/main.py:<module> - person routes loaded
+2023-02-18 23:36:28,267 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/main.py:<module> - person routes loaded
+2023-02-18 23:38:11,765 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/main.py:<module> - person routes loaded
+2023-02-18 23:39:59,326 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/routes/person.py:<module> - person routes loaded
+2023-02-18 23:39:59,326 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/main.py:<module> - person routes called
+2023-02-18 23:39:59,326 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/main.py:<module> - reached end of file
+2023-02-18 23:40:02,641 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/routes/person.py:<module> - person routes loaded
+2023-02-18 23:40:02,641 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/main.py:<module> - person routes called
+2023-02-18 23:40:02,641 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/main.py:<module> - reached end of file
+2023-02-18 23:40:49,612 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/models/person.py:__init__ - person initialization complete
+2023-02-18 23:40:49,612 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/models/person.py:create - person adding to json complete
+2023-02-18 23:41:07,328 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/models/person.py:__init__ - person initialization complete
+2023-02-18 23:41:07,330 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/models/person.py:create - person adding to json complete
+2023-02-18 23:43:37,950 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/models/person.py:__init__ - person initialization complete
+2023-02-18 23:43:37,951 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/models/person.py:create - person adding to json complete
+2023-02-18 23:43:41,802 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/models/person.py:__init__ - person initialization complete
+2023-02-18 23:43:41,803 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/models/person.py:create - person adding to json complete
+2023-02-18 23:48:43,626 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/models/person.py:__init__ - person initialization complete
+2023-02-18 23:48:43,626 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/models/person.py:create - person adding to json complete
+2023-02-19 00:13:58,389 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/routes/person.py:<module> - person routes loaded
+2023-02-19 00:13:58,389 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/main.py:<module> - person routes called
+2023-02-19 00:13:58,389 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/main.py:<module> - reached end of file
+2023-02-19 00:19:41,897 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/routes/person.py:<module> - person routes loaded
+2023-02-19 00:19:41,897 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/main.py:<module> - person routes called
+2023-02-19 00:19:41,898 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/main.py:<module> - reached end of file
+2023-02-19 00:24:39,418 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/routes/person.py:<module> - person routes loaded
+2023-02-19 00:24:39,418 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/main.py:<module> - person routes called
+2023-02-19 00:24:39,418 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/main.py:<module> - reached end of file
+2023-02-19 00:24:57,732 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/models/person.py:__init__ - person initialization complete
+2023-02-19 00:24:57,733 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/models/person.py:create - person adding to json complete
+2023-02-19 00:24:59,117 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/models/person.py:__init__ - person initialization complete
+2023-02-19 00:24:59,118 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/models/person.py:create - person adding to json complete
+2023-02-19 00:26:02,498 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/routes/person.py:<module> - person routes loaded
+2023-02-19 00:26:02,498 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/main.py:<module> - person routes called
+2023-02-19 00:26:02,498 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/main.py:<module> - reached end of file
+2023-02-19 00:28:01,678 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/routes/person.py:<module> - person routes loaded
+2023-02-19 00:28:01,678 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/main.py:<module> - person routes called
+2023-02-19 00:28:01,678 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/main.py:<module> - reached end of file
+2023-02-19 00:29:03,649 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/routes/person.py:<module> - person routes loaded
+2023-02-19 00:29:03,649 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/main.py:<module> - person routes called
+2023-02-19 00:29:03,649 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/main.py:<module> - reached end of file
+2023-02-19 00:29:39,779 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/models/person.py:__init__ - person initialization complete
+2023-02-19 00:29:39,781 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/models/person.py:create - person adding to json complete
+2023-02-19 00:45:20,913 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/routes/person.py:<module> - person routes loaded
+2023-02-19 00:45:20,914 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/main.py:<module> - person routes called
+2023-02-19 00:45:20,914 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/main.py:<module> - reached end of file
+2023-02-19 00:45:50,181 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/models/person.py:__init__ - person initialization complete
+2023-02-19 00:45:50,183 - app.infra.logger - DEBUG - /Users/roland/code/fastapi/app/models/person.py:create - person adding to json complete
