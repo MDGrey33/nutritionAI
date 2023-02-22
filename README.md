@@ -36,16 +36,20 @@ Start the Uvicorn server by running:
 
 You can now access the app by going to `http://localhost:8000`.
 
-You can now access the api documentation by going to `http://localhost:8000/docs`.
+You can now access the api documentation and run swagger tests by going to `http://localhost:8000/docs`.
 
-find the postman collection in `NutritionAI fastapi.postman_collection.json` in the root directory.
+If you make changes, make sure you run `pytest` with 5 passed tests before you make a pull request. 
+
+If you install new libraries use `pip freeze > requirements.txt `
+
+If you need help, feel free to ask.
 
 ## Main Functionality
 
-The Meal Planner app has the following main functionality:
+The Meal Planner app will have the following main functionality:
 
 - Allows users to add new personal information, such as their height, weight, and activity level, to create personalized meal plans.
-### Comming soon
+### Coming soon
 - Uses chatgpt to generate meal plans based on user preferences and dietary restrictions.
 - Allows users to generate new meal plans.
 - Allows users to generate recipes for the meals in the plans.
@@ -56,7 +60,6 @@ We welcome contributions to the Meal Planner app! To contribute, please fork thi
 
 Here are some areas that we are particularly interested in improving:
 
-- File management and object-oriented programming
 - Parallelizing the `generate_recipes` function
 - Creating a mobile app to view meals and submit them to health apps
 - Implementing Google authentication

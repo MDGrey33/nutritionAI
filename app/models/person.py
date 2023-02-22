@@ -1,111 +1,91 @@
+from pydantic import BaseModel
+from pydantic import validator
+from fastapi import HTTPException
+from typing import Optional
+from typing import List
 import os
 import json
-from app.infra import logger
 
 
-class Person:
-    def __init__(self, name, login, gender, height, weight, age, activity_level, diet, meals_per_day,
-                 other_notes):
-        self.name = name
-        self.login = login
-        self.gender = gender
-        self.height = height
-        self.weight = weight
-        self.age = age
-        self.activity_level = activity_level
-        self.diet = diet
-        self.meals_per_day = meals_per_day
-        self.other_notes = other_notes
-        self.profile_path = "content/" + self.login
-        logger.logger.debug('person initialization complete')
+class Person(BaseModel):
+    name: Optional[str]
+    login: Optional[str]
+    gender: Optional[str]
+    height: Optional[float]
+    weight: Optional[float]
+    age: Optional[int]
+    activity_level: Optional[str]
+    diet: Optional[str]
+    meals_per_day: Optional[int]
+    other_notes: Optional[str]
 
-    def create(self):
-        print(self.login)
-        if not os.path.exists(self.profile_path):
-            os.makedirs(self.profile_path)
-        with open(f"{self.profile_path}/profile.json", "w") as file:
-            json.dump(
-                {"name": self.name,
-                 "login": self.login,
-                 "height": self.height,
-                 "weight": self.weight,
-                 "age": self.age,
-                 "gender": self.gender,
-                 "diet": self.diet,
-                 "activity_level": self.activity_level,
-                 "meals_per_day": self.meals_per_day,
-                 "other_notes": self.other_notes,
-                 "profile_path": self.profile_path
-                 }, file)
-        logger.logger.debug('person adding to json complete')
-        return self.profile_path
+    @validator('height')
+    def height_must_be_within_reasonable_range(cls, value):
+        if not (50 <= value <= 300):
+            raise ValueError(f"height must be within the range of 50 cm and 300 cm")
+        return value
 
-    def read(self, login):
-        folder_path = "content/" + login
-        if not os.path.exists(folder_path):
-            logger.logger.debug('person folder not found')
+    @validator('weight')
+    def weight_must_be_within_reasonable_range(cls, value):
+        if not (0 <= value <= 400):
+            raise ValueError(f"weight must be within the range of 0 kg and 400 kg")
+        return value
+
+    @validator('age')
+    def age_must_be_within_reasonable_range(cls, value):
+        if value <= 0 or value > 120:
+            raise ValueError('age must be a positive number less than or equal to 120 years')
+        return value
+
+    def to_json(self):
+        return self.dict()
+
+    def to_dict(self):
+        return self.dict()
+
+    def save(self):
+        file_path = self.get_file_path()
+        person_dict = self.to_json()
+        with open(file_path, "w") as f:
+            json.dump(person_dict, f)
+
+    def get_file_path(self):
+        return f"content/{self.login}/profile.json"
+
+    @classmethod
+    def read(cls, login):
+        file_path = f"content/{login}/profile.json"
+        if not os.path.exists(file_path):
             return None
-        with open(f"{folder_path}/profile.json", "r") as file:
-            data = json.load(file)
-            logger.logger.debug('person reading complete')
-            return Person(name=data["name"],
-                          login=data["login"],
-                          gender=data["gender"],
-                          height=data["height"],
-                          weight=data["weight"],
-                          age=data["age"],
-                          activity_level=data["activity_level"],
-                          diet=data["diet"],
-                          meals_per_day=data["meals_per_day"],
-                          other_notes=data["other_notes"])
+        with open(file_path) as f:
+            data = json.load(f)
+            return cls.parse_obj(data)
 
-    def update(self, name=None, login=None, gender=None, height=None, weight=None, activity_level=None,
-               diet=None, meals_per_day=None, other_notes=None):
-        # Add logic to write to JSON
-        if name:
-            self.name = name
-        if login:
-            self.login = login
-        if gender:
-            self.gender = gender
-        if height:
-            self.height = height
-        if weight:
-            self.weight = weight
-        if activity_level:
-            self.activity_level = activity_level
-        if diet:
-            self.diet = diet
-        if meals_per_day:
-            self.meals_per_day = meals_per_day
-        if other_notes:
-            self.other_notes = other_notes
-        logger.logger.debug('person updating complete')
-        return "Person updated."
+    def update(self, update_fields: List[str]):
+        person = self.read(self.login)
+        if person is None:
+            raise HTTPException(status_code=404, detail="Person not found")
+        person_dict = person.to_dict()
+        for field in update_fields:
+            if field in person_dict:
+                setattr(person, field, getattr(self, field))
+        person.save()
+        return person
 
-    def delete(self):
-        # Add logic to write to JSON
-        logger.logger.debug('person deleting complete')
-        return "Person deleted."
-
-    def calculate_calories(self):
-        bmr = 0
-        if self.gender == "male":
-            bmr = 66 + (6.23 * self.weight) + (12.7 * self.height) - (6.8 * self.age)
-        elif self.gender == "female":
-            bmr = 655 + (4.35 * self.weight) + (4.7 * self.height) - (4.7 * self.age)
-
-        # Calculate total daily energy expenditure based on activity level
-        if self.activity_level == "sedentary":
-            tdee = bmr * 1.2
-        elif self.activity_level == "lightly active":
-            tdee = bmr * 1.375
-        elif self.activity_level == "moderately active":
-            tdee = bmr * 1.55
-        elif self.activity_level == "very active":
-            tdee = bmr * 1.725
-        logger.logger.debug(f'TDEE calculated to {tdee}')
-        return tdee
-
-    def __str__(self):
-        return self.read(self.login)
+    class Config:
+        schema_extra = {
+            "example": {
+                "name": "John Doe",
+                "login": "johndoe",
+                "gender": "male",
+                "height": 175,
+                "weight": 70.0,
+                "age": 30,
+                "activity_level": "active",
+                "diet": "paleo",
+                "meals_per_day": 3,
+                "other_notes": "Likes to swim",
+            }
+        }
+        orm_mode = True
+        extra = "ignore"
