@@ -58,7 +58,7 @@ async def delete_person(person_login: str):
     existing_person = Person.read(person_login)
     if existing_person is None:
         raise HTTPException(status_code=404, detail="Person not found")
-    file_path = existing_person.get_file_path()
+    file_path = existing_person.get_profile_path()
     os.remove(file_path)
     os.rmdir(os.path.dirname(file_path))
     return {"message": "Person deleted successfully"}

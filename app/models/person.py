@@ -5,6 +5,7 @@ from typing import Optional
 from typing import List
 import os
 import json
+from app.infra.file import File
 
 
 class Person(BaseModel):
@@ -43,14 +44,13 @@ class Person(BaseModel):
     def to_dict(self):
         return self.dict()
 
-    def save(self):
-        file_path = self.get_file_path()
-        person_dict = self.to_json()
-        with open(file_path, "w") as f:
-            json.dump(person_dict, f)
+    def get_profile_path(self):
+        file = File(path=f"content/{self.login}/", name="profile.json")
+        return file.get_path()
 
-    def get_file_path(self):
-        return f"content/{self.login}/profile.json"
+    def save(self):
+        file = File(path=f"content/{self.login}/", name="profile.json")
+        file.write(self.to_json(), 'w')
 
     @classmethod
     def read(cls, login):

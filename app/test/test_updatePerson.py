@@ -28,8 +28,8 @@ def person():
         os.makedirs(person_dir_path)
     person.save()
     yield person
-    os.remove(person.get_file_path())
-    os.rmdir(os.path.dirname(person.get_file_path()))
+    os.remove(person.get_profile_path())
+    os.rmdir(os.path.dirname(person.get_profile_path()))
 
 
 def test_update_person(person):

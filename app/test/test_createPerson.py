@@ -18,6 +18,7 @@ def test_create_person():
         "meals_per_day": 3,
         "other_notes": "Likes to swim"
     }
+    client.delete("/persons/johndoe/")
     response = client.post("/persons/", json=data)
     assert response.status_code == 200
     assert response.json() == {
