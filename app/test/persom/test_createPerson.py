@@ -5,7 +5,12 @@ client = TestClient(app)
 
 
 def test_create_person():
-    # Test creating a new person
+
+    # Test creating a person that doesn't exist in the system
+    # Make sure the test person is not already in the system
+    client.delete("/persons/johndoe/")
+
+    # Prepare the payload
     data = {
         "name": "John Doe",
         "login": "johndoe",
@@ -18,8 +23,11 @@ def test_create_person():
         "meals_per_day": 3,
         "other_notes": "Likes to swim"
     }
-    client.delete("/persons/johndoe/")
+
+    # Create the person
     response = client.post("/persons/", json=data)
+
+    # Test asserts
     assert response.status_code == 200
     assert response.json() == {
         "name": "John Doe",

@@ -22,6 +22,8 @@ def test_read_person():
 
     # read the test person
     response = client.get("/persons/testperson/")
+
+    # Assert the response code and person parameters
     assert response.status_code == 200
     assert response.json()["name"] == "Test Person"
     assert response.json()["login"] == "testperson"

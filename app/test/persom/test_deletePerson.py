@@ -24,6 +24,6 @@ def test_delete_person():
     response = client.delete("/persons/testperson/")
     assert response.status_code == 200
 
-    # make sure the person is deleted
+    # make sure the response is negative to deleting an already deleted user
     response = client.get("/persons/testperson/")
     assert response.status_code == 404
