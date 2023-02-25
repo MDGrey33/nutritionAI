@@ -19,7 +19,7 @@ async def read_persons(skip: int = 0, limit: int = 100):
             with open(person_file_path) as f:
                 data = json.load(f)
                 persons.append(Person.parse_obj(data))
-    return persons[skip : skip + limit]
+    return persons[skip: skip + limit]
 
 
 @persons_router.post("/persons/", response_model=Person)

@@ -46,8 +46,3 @@ class MealPlan(BaseModel):
     day: str
     meals: [Meal]
     nutrition_facts: NutritionFacts
-
-
-
-
-

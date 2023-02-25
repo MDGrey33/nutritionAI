@@ -69,12 +69,13 @@ If you are interested in training the Ada model, please reach out to us for more
 
 # Todo list
 
-1. split generate recipe into multiple parallel celery tasks
-2. Pull file management to one package
-3. pull meal from json to object
-4. pull meal plan to object
-5. pull recipe to object
-6. Make mobile app to
+1. address updating name
+2. split generate recipe into multiple parallel celery tasks
+3. Pull file management to one package
+4. pull meal from json to object
+5. pull meal plan to object
+6. pull recipe to object
+7. Make mobile app to
    1. Show meals 
    2. Submit to health app
-7. Implement google authentication for
+8. Implement google authentication for
