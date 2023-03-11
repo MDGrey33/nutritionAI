@@ -1,5 +1,6 @@
-from pydantic import BaseModel
-from pydantic import validator
+from typing import List
+from pydantic import BaseModel, validator
+from app.infra.file import File
 
 
 class NutritionFacts(BaseModel):
@@ -19,9 +20,9 @@ class Recipe(BaseModel):
     name: str
     serving: float
     nutrition_facts: NutritionFacts
-    cookingTime: float
-    ingredient: [Ingredient]
-    instructions: [str]
+    cooking_time: float
+    ingredients: List[Ingredient]
+    instructions: List[str]
 
     @validator('*', pre=True)
     def check_non_negative(cls, value, field):
@@ -42,7 +43,21 @@ class Meal(BaseModel):
         return value
 
 
+def get_meal_plan_path(person_login: str):
+    return f"content/{person_login}/week1/"
+
+
 class MealPlan(BaseModel):
     day: str
-    meals: [Meal]
+    meals: List[Meal]
     nutrition_facts: NutritionFacts
+
+    def save(self, person_login: str):
+        file = File(get_meal_plan_path(person_login), "meal_plan.json")
+        file.write(self, 'w')
+
+    @classmethod
+    def read(cls, person_login: str):
+        file = File(get_meal_plan_path(person_login), "meal_plan.json")
+        meal_plan = file.read(cls)
+        return meal_plan

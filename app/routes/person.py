@@ -7,7 +7,8 @@ from app.models.person_create import PersonCreate
 from app.models.person import Person
 import os
 import json
-from app.infra import logger
+from app.infra.logger import logger
+
 
 persons_router = APIRouter()
 
@@ -119,3 +120,4 @@ async def delete_person(person_login: str):
 
     return {"message": "Person deleted successfully"}
 
+logger.debug("app.routes.person file end reached")

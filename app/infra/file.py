@@ -44,3 +44,14 @@ class File:
         except OSError as e:
             logger.logger.error(f"Error accessing directory or file: {str(e)}")
             return False
+
+    def read(self, model_class):
+        file_path = self.get_path()
+        if not os.path.exists(file_path):
+            logger.logger.debug(f"File {file_path} does not exist")
+            return None
+
+        with open(file_path, "r") as f:
+            file_data = json.load(f)
+
+        return model_class.parse_obj(file_data)

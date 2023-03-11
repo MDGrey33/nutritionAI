@@ -30,9 +30,19 @@ Install the required packages by running:
 
       pip install -r requirements.txt
 
+
+Start the Redis container by running:
+
+      docker run --name some-redis -p 6379:6379 -d redis
+
+
 Start the Uvicorn server by running:
 
       uvicorn app.main:app --reload
+
+Start the Celery worker by running:
+
+      celery -A app.infra.celery_infra.celery_app worker --loglevel=DEBUG
 
 You can now access the app by going to `http://localhost:8000`.
 
