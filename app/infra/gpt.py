@@ -4,7 +4,7 @@ import os
 from app.infra.logger import logger
 
 
-async def ask_gpt(prompt: str):
+def ask_gpt(prompt: str):
     load_dotenv()
     openai.api_key = os.getenv("OPENAI_API_KEY")
     logger.debug("OPENAI_API_KEY key loaded from dotenv")

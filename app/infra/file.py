@@ -1,6 +1,6 @@
 import os
 import json
-from app.infra import logger
+from app.infra.logger import logger
 
 
 class File:
@@ -14,22 +14,20 @@ class File:
 
     def write(self, data, mode='w'):
         try:
+            logger.debug(f"{self.name} file write has been summoned")
             # Create folder if it doesn't exist
             if not os.path.exists(self.path):
                 os.makedirs(self.path)
-                logger.logger.debug(f"Created directory {self.path}")
+                logger.debug(f"Created directory {self.path}")
 
             file_path = os.path.join(self.path, self.name)
 
-            # Create file if it doesn't exist
-            if not os.path.exists(file_path):
-                with open(file_path, mode) as f:
-                    json.dump({}, f)
-                logger.logger.debug(f"Created file {file_path}")
-
-            # Read data from file
-            with open(file_path, "r") as f:
-                file_data = json.load(f)
+            # Read data from file if it exists
+            if os.path.exists(file_path):
+                with open(file_path, "r") as f:
+                    file_data = json.load(f)
+            else:
+                file_data = {}
 
             # Update data with new object
             file_data.update(data)
@@ -38,17 +36,17 @@ class File:
             with open(file_path, mode) as f:
                 json.dump(file_data, f, indent=4)
 
-            logger.logger.debug(f"Wrote object to {file_path}")
+            logger.debug(f"Wrote object to {file_path}")
             return True
 
         except OSError as e:
-            logger.logger.error(f"Error accessing directory or file: {str(e)}")
+            logger.error(f"Error accessing directory or file: {str(e)}")
             return False
 
     def read(self, model_class):
         file_path = self.get_path()
         if not os.path.exists(file_path):
-            logger.logger.debug(f"File {file_path} does not exist")
+            logger.debug(f"File {file_path} does not exist")
             return None
 
         with open(file_path, "r") as f:
