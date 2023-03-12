@@ -83,14 +83,15 @@ def generate_meal_plan_prompt(person: Person) -> str:
     return prompt
 
 
-def create_meal_plan(login):
-    person = Person.read(login)
+def create_meal_plan(person_login: str):
+    person = Person.read(person_login)
     prompt = generate_meal_plan_prompt(person)
     print(f"{prompt}")
     meal_plan = json.loads(ask_gpt(prompt))
     print(meal_plan)
     meal_plan_file = File(path=f"content/{person.login}", name="meal_plan.json")
     meal_plan_file.write(data=meal_plan, mode='w')
+    return("create_meal_plan executed successfully")
 
 
-create_meal_plan("rolandabouyounes")
+# create_meal_plan("rolandabouyounes")
