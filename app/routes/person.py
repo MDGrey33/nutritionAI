@@ -8,6 +8,7 @@ from app.models.person import Person
 import os
 import json
 from app.infra.logger import logger
+import shutil
 
 
 persons_router = APIRouter()
@@ -105,6 +106,26 @@ async def delete_person(person_login: str):
         # Handle case where person is not found
         raise HTTPException(status_code=404, detail="Person not found")
 
+    # Try to delete the person's directory and all files it contains
+    file_path = existing_person.get_profile_path()
+    try:
+        shutil.rmtree(os.path.dirname(file_path))
+    except Exception as e:
+        # Handle errors during directory deletion
+        raise HTTPException(status_code=500, detail=f"Error deleting directory: {str(e)}")
+
+    return {"message": "Person deleted successfully"}
+
+"""async def delete_person(person_login: str):
+    try:
+        existing_person = Person.read(person_login)
+    except Exception as e:
+        # Handle errors during Person.read method call
+        raise HTTPException(status_code=500, detail=f"Error reading person: {str(e)}")
+    if existing_person is None:
+        # Handle case where person is not found
+        raise HTTPException(status_code=404, detail="Person not found")
+
     # Try to delete the person's profile and directory
     file_path = existing_person.get_profile_path()
     try:
@@ -119,5 +140,6 @@ async def delete_person(person_login: str):
         raise HTTPException(status_code=500, detail=f"Error deleting directory: {str(e)}")
 
     return {"message": "Person deleted successfully"}
+"""
 
 logger.debug("app.routes.person file end reached")

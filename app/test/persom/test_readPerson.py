@@ -18,10 +18,12 @@ def test_read_person():
         "meals_per_day": 3,
         "other_notes": "Likes to swim",
     }
-    client.post("/persons/", json=payload)
+    response = client.post("/persons/", json=payload)
+    print(response.json())
 
     # read the test person
     response = client.get("/persons/testperson/")
+    print(response.json())
 
     # Assert the response code and person parameters
     assert response.status_code == 200
